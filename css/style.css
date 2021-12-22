@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Road+Rage&display=swap');
+
+
+body{background-color: #180f0f;
+    margin: 0, auto;
+}
+
+.container {
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(100px, auto, auto);
+        justify-items: center;
+        align-items: center;
+          
+   
+ }
+.logo{
+    max-height: inherit;
+}
+
+.welcome{
+    color:#33867e;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 24px;
+    width: 60%;
+    text-align: center;
+}
