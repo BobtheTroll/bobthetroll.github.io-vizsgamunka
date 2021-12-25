@@ -303,16 +303,42 @@ a:after {
 }
 
 @media (max-width:480px) {
-  .header{
+  nav{
+    grid-column: 1/2;
+    grid-row:1/2;
+    align-self:flex-start;
+  }
+  header{   
+    grid-column: 1/2;
+    grid-row:2/3;
+  }
+  footer{
+    grid-column: 1/2;
+    grid-row:6/7;  
+  }
+  section.griditem-4{
+    grid-column: 1/2;
+    grid-row:3/4; 
+  }
+  section.griditem-5{
+    grid-column: 1/2;
+    grid-row:4/5;
+  }
+  section.griditem-6{
+    grid-column: 1/2;
+    grid-row:5/6;
+  }
+  header{
     word-wrap: break-word;
-    font-size: 100px;
+    font-size: 120px;
   }
   .menu > ol > li {
-    width: 150px;
+    width: 200px;
   }
   .menu > ol > li a:not(:last-child):before {
     right: 25px;
   }
+
 }
 /*@media (min-width: 775px) {
   .menu > ol > li {
