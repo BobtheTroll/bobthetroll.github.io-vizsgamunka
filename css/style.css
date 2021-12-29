@@ -108,14 +108,14 @@ section.griditem-7{
   --accent-color: #45494E;
   --gradient-color: #FBFBFB;
 }*/
-a:focus {
+.menu-item a:focus {
   outline: none;
   position: relative;
 }
-a:focus:after {
+.menu-item a:focus:after {
   width: 50px;
 }
-a:after {
+.menu-item a:after {
   content: "";
   background: #180f0f;
   position: absolute;
@@ -353,7 +353,7 @@ a:after {
   background: #180f0f;
   max-width: 300px;
   margin: 0 auto 100px;
-  padding: 30px;
+  padding: 10px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -378,7 +378,7 @@ a:after {
   font-size: 24px;
   font-family: 'Road Rage';
 }
-.form-container button {
+.form-container button.submit {
   outline: 0;
   background: #33867e;
   font-family: 'Road Rage';
@@ -434,7 +434,7 @@ a:after {
 }
 .form-container .info span {
   color: #4d4d4d;
-  font-size: 18px;
+  font-size: 24px;
 }
 .form-container .info span a {
   color: #000000;
@@ -444,5 +444,30 @@ a:after {
   color: #EF3B3A;
 }
 
-
-
+.form-container button.cancel {
+  margin-top: 20px;
+  outline: 0;
+  background: #33867e;
+  font-family: 'Road Rage';
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #180f0f;
+  font-size: 36px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+button.cancel a{
+  text-decoration: none;
+  color:#180f0f;
+}
+button.submit:hover{
+  background-color: #fb764d;
+}
+button.cancel:hover{
+  background-color: #fb764d;
+}

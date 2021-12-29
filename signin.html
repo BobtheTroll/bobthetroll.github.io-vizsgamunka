@@ -13,19 +13,29 @@
 
 <body>
     <div class="form-container">
-        <div class="signinlogo"><img src="img/logo_150.png"/></div>
-        <form class="register-form" action="registration.html" method="post">
-          <input  type="text" placeholder="felhasználónév"/>
-          <input  type="password" placeholder="jelszó"/>
-          <input  type="password" placeholder="jelszó mégegyszer"/>
-          <input  type="text" placeholder="e-mail cím"/>
-          <button type="submit" value="Sikeres regisztráció">FIÓK LÉTREHOZÁSA </button>
+        <div class="signinlogo"><img src="img/logo_300.png"/></div>
+        <form class="register-form" action="registration.html" method="">
+          
+          <input  type="text" placeholder="felhasználónév" required oninvalid="this.setCustomValidity('adj meg egy felhasználónevet')"
+          oninput="this.setCustomValidity('')"/>
+          <input  type="password" placeholder="jelszó" required oninvalid="this.setCustomValidity('adj meg egy jelszót')"
+          oninput="this.setCustomValidity('')"/>
+          <input  type="password" placeholder="jelszó mégegyszer" required oninvalid="this.setCustomValidity('add meg újra a jelszót')"
+          oninput="this.setCustomValidity('')"/>
+          <input  type="email" placeholder="e-mail cím" required oninvalid="this.setCustomValidity('e-mail cím hiányzik vagy rosszul írtad be')"
+          oninput="this.setCustomValidity('')"/>
+          <button class="submit" type="submit" value="Sikeres regisztráció">FIÓK LÉTREHOZÁSA </button>
+          <button class="cancel"><a href="main.html">MÉGSEM</a></button>
           <p class="message">Van már fiokód? <a href="#">JELENTKEZZ BE!</a></p>
         </form>
-        <form class="login-form" action="main.html" method="post">
-          <input  type="text" placeholder="felhasználónév"/>
-          <input  type="password" placeholder="jelszó"/>
-          <button type="submit" value="Irány a főoldal"> BELÉPÉS </button>
+        <form class="login-form" action="main.html" method="">
+          
+          <input  type="text" placeholder="felhasználónév" required oninvalid="this.setCustomValidity('felhasználónév hiányzik')"
+          oninput="this.setCustomValidity('')"/>
+          <input  type="password" placeholder="jelszó" required oninvalid="this.setCustomValidity('a jelszó hiányzik')"
+          oninput="this.setCustomValidity('')"/>
+          <button class="submit" type="submit" value="Irány a főoldal"> BELÉPÉS </button>
+          <button class="cancel"><a href="main.html">MÉGSEM</a></button>
           <p class="message">Még nincs fiókod? <a href="#">REGISZTRÁLJ!</a></p>
         </form>
       </div>
