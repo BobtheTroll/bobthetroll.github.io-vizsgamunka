@@ -6,16 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Főoldal</title>
-    <script src="https://kit.fontawesome.com/90ed089ec0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+    <div class="form-container">
+        <div class="signinlogo"><img src="img/logo_150.png"/></div>
+        <form class="register-form" action="registration.html" method="post">
+          <input  type="text" placeholder="felhasználónév"/>
+          <input  type="password" placeholder="jelszó"/>
+          <input  type="password" placeholder="jelszó mégegyszer"/>
+          <input  type="text" placeholder="e-mail cím"/>
+          <button type="submit" value="Sikeres regisztráció">FIÓK LÉTREHOZÁSA </button>
+          <p class="message">Van már fiokód? <a href="#">JELENTKEZZ BE!</a></p>
+        </form>
+        <form class="login-form" action="main.html" method="post">
+          <input  type="text" placeholder="felhasználónév"/>
+          <input  type="password" placeholder="jelszó"/>
+          <button type="submit" value="Irány a főoldal"> BELÉPÉS </button>
+          <p class="message">Még nincs fiókod? <a href="#">REGISZTRÁLJ!</a></p>
+        </form>
+      </div>
+      
+<script>
+    $(".message a").click(function () {
+  $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+});
 
-
-    
-
+</script>
 </body>
 
 </html>

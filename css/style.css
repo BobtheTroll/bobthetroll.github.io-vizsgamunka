@@ -31,20 +31,20 @@ body{background-color: #180f0f;
     display: grid;
     margin: 0 auto;
     grid-gap: 2px;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(7,60px,auto,auto,auto,auto,auto,auto);
+    grid-auto-rows:auto;
     align-items: center;
     text-align: center;
     justify-items: center;
 }
 nav{
-  grid-column: 1/7;
+  grid-column: 1/9;
   grid-row:1/2;
   align-self:flex-start;
 }
 header{
-    grid-column: 1/7;
+    grid-column: 1/9;
     grid-row:2/3;
     align-self: flex-start;
     color: #180f0f;
@@ -56,7 +56,7 @@ header{
 }
 
 footer{
-    grid-column:1/7;
+    grid-column:1/9;
     grid-row:6/7;
     color: #33867e;
     
@@ -79,8 +79,8 @@ section.griditem-4{
 section.griditem-5{
   grid-column:3/5;
   grid-row:3/6;
-  color: #f94a4c;
-  background-color: #fbd567;
+  color: #180f0f;
+  background-color: #fb764d;
   align-self: flex-start;
   padding: 10px;
 }
@@ -88,17 +88,26 @@ section.griditem-5{
 section.griditem-6{
   grid-column:5/7;
   grid-row:3/6;
+  color: #f94a4c;
+  background-color: #fbd567;
+  align-self: flex-start;
+  padding: 10px;
+}
+section.griditem-7{
+  grid-column:7/9;
+  grid-row:3/6;
   color: #180f0f;
   background-color: #b4f4fd;
   align-self: flex-start;
   padding: 10px;
 }
 
+
 /*Navigáció simogatása*/
-:root {
+/*:root {
   --accent-color: #45494E;
   --gradient-color: #FBFBFB;
-}
+}*/
 a:focus {
   outline: none;
   position: relative;
@@ -305,7 +314,7 @@ a:after {
   }
   footer{
     grid-column: 1/7;
-    grid-row:6/7;  
+    grid-row:7/8;  
   }
   section.griditem-4{
     grid-column:1/7;
@@ -319,6 +328,10 @@ a:after {
     grid-column: 1/7;
     grid-row:5/6;
   }
+  section.griditem-7{
+    grid-column: 1/7;
+    grid-row:6/7;
+  }
   header{
     word-wrap: break-word;
     font-size: 110px;
@@ -331,4 +344,105 @@ a:after {
   }
 
 }
+
+/*SignIn Form*/
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  background: #180f0f;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+.form-container .signinlogo img {
+  display: block;
+  width: 100%;
+}
+.form-container input {
+  outline: 0;
+  background: #fff;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'Road Rage';
+}
+.form-container button {
+  outline: 0;
+  background: #33867e;
+  font-family: 'Road Rage';
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #180f0f;
+  font-size: 36px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form-container .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 18px;
+  font-family: 'Covered By Your Grace', cursive;
+}
+.form-container .message a {
+  color: #f94a4c;
+  text-decoration: none;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 20px;
+}
+.form-container .register-form {
+  display: none;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.form-container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.form-container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.form-container .info span {
+  color: #4d4d4d;
+  font-size: 18px;
+}
+.form-container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.form-container .info span .fa {
+  color: #EF3B3A;
+}
+
+
 
