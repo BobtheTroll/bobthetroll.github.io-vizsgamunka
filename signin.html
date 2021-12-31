@@ -14,7 +14,7 @@
 <body>
   <div class="form-container" action="">
     <div class="signinlogo"><img src="img/logo_300.png" /></div>
-    <form class="register-form" action="registration.html">
+    <form class="register-form" action="registration-success.html">
 
       <input type="text" placeholder="felhasználónév" required
         oninvalid="this.setCustomValidity('adj meg egy felhasználónevet')" oninput="this.setCustomValidity('')" />
@@ -25,17 +25,17 @@
       <input type="email" placeholder="e-mail cím" required
         oninvalid="this.setCustomValidity('e-mail cím hiányzik vagy rosszul írtad be')"
         oninput="this.setCustomValidity('')" />
-      <button class="submit" type="submit"><a href="registration.html">FIÓK LÉTREHOZÁSA</a></button>
+      <button class="submit" type="submit" value="irány a regisztráció visszaigazolás">FIÓK LÉTREHOZÁSA</button>
       <button class="cancel" type="reset"><a href="main.html">MÉGSEM</a></button>
       <p class="message">Van már fiokód? <a href="#">JELENTKEZZ BE!</a></p>
     </form>
-    <form class="login-form" action="main.html" method="">
+    <form class="login-form" action="main.html">
 
       <input type="text" placeholder="felhasználónév" required
         oninvalid="this.setCustomValidity('felhasználónév hiányzik')" oninput="this.setCustomValidity('')" />
       <input type="password" placeholder="jelszó" required oninvalid="this.setCustomValidity('a jelszó hiányzik')"
         oninput="this.setCustomValidity('')" />
-      <button class="submit" type="submit"><a href="main.html">BELÉPÉS</a></button>
+      <button class="submit" type="submit" value="irány a főoldal">BEJELENTKEZÉS</button>
       <button class="cancel" type="reset"><a href="main.html">MÉGSEM</a></button>
       <p class="message">Még nincs fiókod? <a href="#">REGISZTRÁLJ!</a></p>
     </form>
