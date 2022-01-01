@@ -32,7 +32,7 @@ body{background-color: #180f0f;
     margin: 0 auto;
     grid-gap: 2px;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(7,60px,auto,auto,auto,auto,auto,auto);
+    grid-template-rows: repeat(7,60px,auto,auto,auto,auto,auto,100px);
     grid-auto-rows:auto;
     align-items: center;
     text-align: center;
@@ -54,13 +54,20 @@ header{
     border-radius: 3px;
     text-align: center;
 }
-
 footer{
     grid-column:1/9;
     grid-row:6/7;
     color: #33867e;
-    
+    font-family: 'Road Rage';
+    width: 100%;
+    margin-top:25px;
+    padding: 10px;
+    font-size: 18px;
 }
+/*.fas.fa-heart{
+    color:#f94a4c;*/
+    
+
 section{
   margin:5px;
   border-radius: 5px;
@@ -75,6 +82,8 @@ section.griditem-4{
     align-self: flex-start;
     padding: 10px;
 }
+
+
 section.griditem-5{
   grid-column:3/5;
   grid-row:3/6;

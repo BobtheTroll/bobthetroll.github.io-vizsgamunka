@@ -5,3 +5,29 @@ tabindex kell az iphonehoz!!! ááááááá
 
  <button class="submit" type="submit" value="Sikeres regisztráció">FIÓK LÉTREHOZÁSA </button>
  <button class="submit" type="submit" value="Irány a főoldal"> BELÉPÉS </button>
+
+ <footer class="griditem-8"><p>&copy; 2021 Vizikutya Falka | HOZZÁVALÓK: 
+        <i class="fas fa-heart" title="Szeretet" style="font-size: 10px"></i>
+         & 
+        <i class="fas fa-coffee" title="Kávé" style="font-size: 10px"></i></p>
+        </footer>
+
+FOR ANYONE WHO WANTS TO LEARN HOW TO ADD AN IMAGE TO EACH SCENE
+
+
+var imagesDatabase = {
+    '1': src="images/bs1.jpg",
+    '2': src="images/bs2.jpg",
+    '3':src="images/bulb.png"
+} 
+
+  var theImageDiv = document.createElement('div');
+  theImageDiv.innerHTML = "<img id='the-image-bro' src='" + imagesDatabase[textNodeIndex] + "' height=150 length=500 style='position: fixed; top: 50%'>"
+  
+  document.getElementById('imagediv').appendChild(theImageDiv);
+
+
+keep adding images to the database in that format and change the position to whatever you like in the inner HTML. Remember to make a div with the id imagediv in the html
+
+1
+
