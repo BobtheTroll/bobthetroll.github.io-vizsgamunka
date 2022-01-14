@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Caveat&family=Covered+By+Your+Grace&family=Freckle+Face&family=Road+Rage&family=Syne+Mono&family=Zilla+Slab+Highlight&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -54,6 +53,7 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
+    font-family: 'Freckle Face', cursive;
   }
   
   .btn-grid {
