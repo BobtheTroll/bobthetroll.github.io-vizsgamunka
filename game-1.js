@@ -42,30 +42,30 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'You wake up in a strange place and you see a jar of blue goo near you.',
+    text: 'Kinyitod a szemed. Csak lassan térsz magadhoz, úgy tűnik elaludtál. Nem is csoda, egész délután a könyvtárban voltál és a papucsállatkáról próbáltál meg minnél több információt megszerezni. Arra még emlékszel, hogy kinyitod a Nagy Állatismereti Kézikönyvet és unottan fellapozod az egysejtűekről szóló fejezetet. Fáradt voltál, csak egy kicsit letetted a fejed az asztalra..csak néhány percre..és most? Az ablakon kinézve megállapítod, hogy igencsak hosszúra sikeredett ez a kis pihenő. Már sötétedik és a papucsállatkák életéről sem tudtál meg semmit. Most mi legyen?',
     options: [
       {
-        text: 'Take the goo',
-        setState: { blueGoo: true },
+        text: 'Erőt veszel magadon, maradsz és befejezed a feladatot. Talán már nincs sok hátra.',
+        /*setState: { blueGoo: true },*/
         nextText: 2
       },
       {
-        text: 'Leave the goo',
-        nextText: 2
+        text: 'Úgy döntesz, hogy inkább hazamész, eddig sem haladtál túl jól és hát mégiscsak péntek van.',
+        nextText: 3
       }
     ]
   },
   {
     id: 2,
-    text: 'You venture forth in search of answers to where you are when you come across a merchant.',
+    text: 'Fellapozod a könyvet, ahhh megvan, ..a papucsállatka felépítése..nem, ez továbbra sem tűnik érdekesnek. Még van 2 hét a házidolgozat leadásáig, nem kell ezt most befejezned. Majd ha frissebb, üdébb és kipihentebb leszel.',
     options: [
       {
-        text: 'Trade the goo for a sword',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        text: 'Összepakolsz és elindulsz a kijárat felé.',
+        /*requiredState: (currentState) => currentState.blueGoo,*/
+        /*setState: { blueGoo: false, sword: true },*/
         nextText: 3
       },
-      {
+      /*{
         text: 'Trade the goo for a shield',
         requiredState: (currentState) => currentState.blueGoo,
         setState: { blueGoo: false, shield: true },
@@ -74,71 +74,75 @@ const textNodes = [
       {
         text: 'Ignore the merchant',
         nextText: 3
-      }
+      }*/
     ]
   },
   {
     id: 3,
-    text: 'After leaving the merchant you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    text: 'Ahogy pakolod össze a dolgaid, akkor veszed észre, hogy a könyvtár teljesen üres. A lámpákat már lekapcsolták. Megállapítod, hogy jól döntöttél, amikor arra jutottál, inkább hazamész. Így elaludni, de tényleg? A kijárathoz érve azonban baljós előérzeted támad, nagy a csend és nagy a sötétség. Megpróbálod kinyitni az ajtót, de ...ZÁRVA van! Mindenki hazament, de téged itt felejtettek, hogy lehet, hogy senki sem szólt?! Előveszed a mobilod, hogy haza telefonálj, valaki jöjjön érted és juttasson ki innen - nagyon nem szeretnéd az egész hétvégét egy könyvtárban tölteni! Már nyúlsz is a zsebed felé, amikor eszedbe jut, hogy nincs nálad, Józsi bácsi vette el még a nagyszünet végén, amikor becsengettek, mert nem kapcsoltad ki. Kellemetlen. Hogyan tovább?',
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Elindulsz másik kijáratot keresni. Talán van valahol egy véletlenül nyitva felejtett ajtó. Vagy egy pótkulcs. Vagy telefontöltő. Esetleg valami harapnivaló, már kezdesz éhes is lenni. Úgy tűnik, kevés volt a menzás szilvásgombóc. Nah, de koncentráljunk a KIJÁRATRA!',
         nextText: 4
       },
       {
-        text: 'Find a room to sleep at in the town',
+        text: 'Eszedbe jut, hogy Julcsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Julcsi néni asztalához.',
         nextText: 5
       },
-      {
+      /*{
         text: 'Find some hay in a stable to sleep in',
         nextText: 6
-      }
+      }*/
     ]
   },
   {
     id: 4,
-    text: 'You are so tired that you fall asleep while exploring the castle and are killed by some terrible monster in your sleep.',
+    text: 'Azért lássuk be, nem egyszerű bármit is megtalálni ebben a sötétben. Leginkább másik kijáratot. Egy elemlámpa jól jönne. De abból pont annyi van nálad, mint működő mobiltelefonból. A könyvespolcok között botorkálva halvány fénysugarat veszel észre. Lehet másnak is sikerült a könyvek felett elaludnia? Halló...van itt valaki? - kiabálod a sötétségbe, de nem érkezik válasz.',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Bizonytalan léptekkel ugyan, de elindulsz a fénysugár irányába.',
+        nextText: 5
       }
     ]
   },
   {
     id: 5,
-    text: 'Without any money to buy a room you break into the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.',
+    text: 'Julcsi néni asztala. Úgy tűnik, elfelejtette lekapcsolni a kis lámpát. Az asztal sarkán néhány könyvtári kölcsönző cédula mellett egy asztali telefon. Ezzzzazzz! Megmenekültél. A telefonhoz közelebb lépve azonban látod, hogy a használathoz szükséged lesz Julcsi néni könyvtárosi azonosítójára. Nah, ne..még ez is. Próbálod felidézni a legutóbbi alkalmat, amikor találkoztatok, hátha eszedbe jut a nyakában lógó belépőkártyán található azonosítószám. De hiába. Reményvesztetten leroskadsz a legközelebbi székre - egyre biztosabbnak látszik, hogy az egész hétvégét itt fogod tölteni. Utálom a papucsállatkákat - gondolod magadban, de ahogy végignézel az asztalon, meglátsz egy jegyzetfüzetet - "telefon azonosító kód vészhelyzet esetére" felirattal. Szeretem a papucsállatkákat és fellélegezve nyitod ki  a jegyzettömböt, ahol egy rejtélyes kódsort találsz. Ez meg vajon mi lehet?',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Nah, most még ez is..rejtélyes kódsor..úgy döntesz, inkább sajnálod még magad egy kicsit és tovább utálod a papucsállatkákat',
+        nextText: 6
+      },
+      {
+        text: 'Rejtélyes kódsor, mi? Már érzed is a szabadság édes ízét - milyen kódsor az, amit te ne tudnál kitalálni?! Előveszel egy tollat és olvasni kezded.',
+        nextText: 7
       }
     ]
   },
   {
     id: 6,
-    text: 'You wake up well rested and full of energy ready to explore the nearby castle.',
+    text: 'Úgy tűnik, elég volt néhány percet eltölteni az önsajnálat mocsarában, mert egyre erősebben érzed, hogy közel a szabadulás. Mindig is szerettél rejtvényeket megoldani és valószínű, hogy Julcsi néni kódja sem feltörhetetlen. Arról nem is beszélve, hogy még két napig a mai uzsonnád maradékából élni, nem egy vonzó lehetőség.',
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Erőt veszel magadon és tollat ragadsz. Olvasni kezded a jegyzetet.',
         nextText: 7
       }
     ]
   },
   {
     id: 7,
-    text: 'While exploring the castle you come across a horrible monster in your path.',
+    text: '"Ha IGAZ, akkor 1, ha HAMIS, akkor 0" - nah jó, de mi? - gondolod magadban…kell itt még lennie valaminek..továbblapozol és egy Vizikutya feladványra bukkansz. Az első kérdés: A vízikutya trópusi vidékről származó állat, ezért igen kedveli a meleg környezetet.',
     options: [
       {
-        text: 'Try to run',
+        text: 'Igaz',
         nextText: 8
       },
       {
-        text: 'Attack it with your sword',
-        requiredState: (currentState) => currentState.sword,
+        text: 'Hamis',
+        /*requiredState: (currentState) => currentState.sword,*/
         nextText: 9
       },
-      {
+      /*{
         text: 'Hide behind your shield',
         requiredState: (currentState) => currentState.shield,
         nextText: 10
@@ -147,45 +151,169 @@ const textNodes = [
         text: 'Throw the blue goo at it',
         requiredState: (currentState) => currentState.blueGoo,
         nextText: 11
-      }
+      }*/
     ]
   },
   {
     id: 8,
-    text: 'Your attempts to run are in vain and the monster easily catches.',
+    text: 'Gondold ezt át újra, szólal meg egy hang a fejedben. A faliújságon meglátsz egy ismertetőt a vizikutyákról: "annak ellenére, hogy Mexikóból származik a hideg – 25 C fok alatti hőmérsékletet kedveli,"',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Aha, akkor a válasz hamis!',
+        nextText: 9
+      },
+      {
+        text: 'Aha, akkor a válasz igaz!',
+        nextText: 8
       }
     ]
   },
   {
     id: 9,
-    text: 'You foolishly thought this monster could be slain with a single sword.',
+    text: 'A rejtvény 5 kérdést tartalmaz, te pedig gondosan feljegyzed az első kérdésre adott válaszod. Majd tovább olvasod a feladványt: "A vizikutya fogságban akár 20 évig is élhet".',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Igaz',
+        nextText: 11
+      },
+      {
+        text: 'Hamis',
+        nextText: 10
       }
     ]
   },
   {
     id: 10,
-    text: 'The monster laughed as you hid behind your shield and ate you.',
+    text: 'Gondold ezt át újra, szólal meg egy hang ismételten a fejedben. A faliújságon lévő ismertető szerint: "életkora – szabadban kb 10 évig él, fogságban az élettartama ennek a dupláját is elérheti"',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Igaz',
+        nextText: 11
+      },
+      {
+        text: 'Hamis',
+        nextText: 10
       }
     ]
   },
   {
     id: 11,
-    text: 'You threw your jar of goo at the monster and it exploded. After the dust settled you saw the monster was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.',
+    text: 'Érzed, hogy kezdesz belejönni, ezt a választ is leírod és már olvasod is tovább: "A vízikutya zsákmányát éles fogaival aprítja fel"',
     options: [
       {
-        text: 'Congratulations. Play Again.',
+        text: 'Igaz',
+        nextText: 12
+      },
+      {
+        text: 'Hamis',
+        nextText: 13
+      }
+    ]
+  },
+  {
+    id: 12,
+    text: 'Háát, ebben azért nem vagy teljesen biztos, lopva ismét a faliújságra nézel: "A zsákmányt vákumerővel szippantja a gyomrába."',
+    options: [
+      {
+        text: 'Aha, akkor a válasz, Hamis',
+        nextText: 13
+      },
+      {
+        text: 'Aha, akkor a válasz, Igaz',
+        nextText: 12
+      }
+    ]
+  },
+  {
+    id: 13,
+    text: 'Már látod a végét, gyorsan leírod a harmadik kérdésre adott válaszod és ugrasz is a következőre. A negyedik kérdés így szól: "A vízikutya ragadozó, apró viziállatokkal táplálkozik"',
+    options: [
+      {
+        text: 'Igaz',
+        nextText: 15
+      },
+      {
+        text: 'Hamis',
+        nextText: 14
+      }
+    ]
+  },
+  {
+    id: 14,
+    text: 'Eszedbe jut az előző kérdés és az arra adott válasz, azt olvastad, hogy a zsákmányt vákumerővel szippantja a gyomrába. De hát néhány vizi fűszálat nem nevezhetünk zsákmánynak!',
+    options: [
+      {
+        text: 'Végiggondolva, igaz, a vizikutya minden cukisága ellenére ragadozó.',
+        nextText: 15
+      },
+      {
+        text: 'Hamis',
+        nextText: 14
+      }
+    ]
+  },
+  {
+    id: 15,
+    text: 'Sikeresen túljutottál a negyedik kérdésen is, ezt a választ is leírod, de már az utolsó kérdésre koncentrálsz: "A vízikutya, ha elveszti a lábát, akkor képes újranöveszteni"',
+    options: [
+      {
+        text: 'Igaz',
+        nextText: 17
+      },
+      {
+        text: 'Hamis',
+        nextText: 16
+      }
+    ]
+  },
+  {
+    id: 16,
+    text: 'Ismét a faliújságra pillantasz: "Először laborokban, kísérleti állatnak tartották, mert hihetetlen a gyógyulási képessége, elvesztett végtagjait képes újranöveszteni.',
+    options: [
+      {
+        text: 'Aha, akkor a válasz Igaz!',
+        nextText: 17
+      },
+      {
+        text: 'Aha, akkor a válasz Hamis',
+        nextText: 16
+      }
+    ]
+  },
+  {
+    id: 17,
+    text: 'Itt a vége, gyorsan a lejegyzetelt válaszaidra tekintesz és már írod is a kódot. Igaz = 1, hamis = 0. Az asztalon található telefonon az alábbi számgombokat nyomod le:',
+    options: [
+      {
+        text: '01011',
+        nextText: 19
+      },
+      {
+        text: '10110',
+        nextText: 18
+      },
+      {
+        text: '01001',
+        nextText: 18
+      }
+    ]
+  },
+  {
+    id: 18,
+    text: 'Hűha, ez nem lesz jó..hiába próbálkozol újra meg újra, a telefon néma marad. De mit nézhettem be? - kérdezed magadtól. Tudod, hogy ilyen közel a szabadsághoz már nem fogod feladni!',
+    options: [
+      {
+        text: 'Újra olvasni kezded a jegyzetet.',
+        nextText: 7
+      }
+    ]
+  },
+  {
+    id: 19,
+    text: 'Győzelem!!!! A telefon búg, van szabad vonal..el sem hiszed, hogy végül ilyen egyszerű volt, hiába no, ügyes vagy! Tárcsázod is az otthoni számotokat, küldjenek érted valakit mielőbb, mert már igencsak szabadulnál a könyvtár fogságából. Miközben várod, hogy valaki felvegye a telefont, magadban elmosolyodsz, mert elképzeled, ahogy egy vizikutya az eleséget egyszerűen a szájába szippantva kajál...ez milyen már, de tényleg?!',
+    options: [
+      {
+        text: 'Küldetés vége, gratuálunk sikeresen befejezted a játékot! ÚJRAJÁTSZÁS',
         nextText: -1
       }
     ]

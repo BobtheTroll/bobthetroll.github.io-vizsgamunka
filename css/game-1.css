@@ -6,23 +6,51 @@
     margin: 0;
     padding: 0;
   }
-
-  body {
+  body{
+    background-color: #180f0f;
+    margin: 0 auto;
+}
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 50px, 300px,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto);
+    grid-auto-rows: auto;
     background-color: #180f0f;
     padding: 0;
     margin: 0, auto;
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    text-align: center;
+    grid-gap: 10px;
+    /*width: 100vw;
+    height: 100vh;*/
   }
+  img{
+    grid-column: 1/2;
+    grid-row:1/2;
+  }
+  header{
+    grid-column: 1/13;
+    grid-row:1/2;
+    align-self: center;
+    font-family: 'Covered By Your Grace', cursive;
+    color: #33867e;
+    font-size: 48px;
+  }
+  .game-container{
+   grid-column: 1/13;
+   grid-row: 3/12;
+   align-items: center;
+   justify-content: center;
   
+  }
   .game-container {
     display: grid;
-    width: 400px;
+    width: 600px;
     max-width: 80%;
     background-color: #fbd567;
+    /*background-image: url("../img/green-background.png");*/
+    height: 400px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
@@ -48,4 +76,19 @@
     background-color: #f94a4c;
   }
   
-  
+  @media (max-width:680px) {
+    header{
+    grid-column: 1/13;
+    grid-row:2/3;
+    word-wrap: break-word;
+  }
+    img{
+    grid-column: 1/13;
+    grid-row:1/2;
+    align-self: center;
+    justify-self: center;
+  }
+  .game-container{
+    height: auto;
+  }
+}
