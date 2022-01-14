@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Caveat&family=Covered+By+Your+Grace&family=Freckle+Face&family=Road+Rage&family=Syne+Mono&family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Chelsea+Market&family=Courier+Prime&family=Covered+By+Your+Grace&family=Fredericka+the+Great&family=Grandstander:wght@600&family=M+PLUS+1+Code:wght@600&family=Road+Rage&family=Roboto+Mono&family=Vujahday+Script&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -32,20 +32,20 @@
     grid-column: 1/13;
     grid-row:1/2;
     align-self: center;
-    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Fredericka the Great', cursive;
     color: #33867e;
     font-size: 48px;
   }
   .game-container{
    grid-column: 1/13;
    grid-row: 3/12;
-   align-items: center;
-   justify-content: center;
+   align-self: center;
+   justify-self: center;
   
   }
   .game-container {
     display: grid;
-    width: 600px;
+    width: 500px;
     max-width: 80%;
     background-color: #fbd567;
     /*background-image: url("../img/green-background.png");*/
@@ -53,7 +53,8 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
-    font-family: 'Freckle Face', cursive;
+    font-family: 'Courier Prime', monospace;
+    text-align: justify;
   }
   
   .btn-grid {
@@ -70,6 +71,8 @@
     padding: 5px 10px;
     color: #180f0f;
     outline: none;
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
   }
   
   .btn:hover {
