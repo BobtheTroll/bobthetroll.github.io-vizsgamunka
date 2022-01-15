@@ -34,7 +34,13 @@
     align-self: center;
     font-family: 'Fredericka the Great', cursive;
     color: #33867e;
-    font-size: 48px;
+    font-size: 56px;
+    margin-top: 25px;
+  }
+  footer{
+    grid-column: 1/13;
+    grid-row: 12/13;
+    color:azure;
   }
   .game-container{
    grid-column: 1/13;
@@ -45,11 +51,11 @@
   }
   .game-container {
     display: grid;
-    width: 500px;
+    width: 600px;
     max-width: 80%;
-    background-color: #fbd567;
+    /*background-color: #fbd567;*/
     /*background-image: url("../img/green-background.png");*/
-    height: 400px;
+    height: auto;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
@@ -65,25 +71,26 @@
   }
   
   .btn {
-    background-color: #fb764d;
-    border: 1px solid #fb764d;
+    background-color: #180f0f;
+    border: 1px solid #FF6600;
     border-radius: 5px;
     padding: 5px 10px;
-    color: #180f0f;
+    color: white;
     outline: none;
     font-family: 'Courier Prime', monospace;
-    font-weight: bold;
-  }
-  
-  .btn:hover {
-    background-color: #f94a4c;
-  }
+    box-shadow: 0 0 40px 40px #ff6600 inset, 0 0 0 0 #ff6600;
+    transition: all 150ms ease-in-out;
+    }
+    .btn:hover {
+      box-shadow: 0 0 10px 0 #ff6600 inset, 0 0 10px 4px #ff6600;
+    }
   
   @media (max-width:680px) {
     header{
     grid-column: 1/13;
     grid-row:2/3;
     word-wrap: break-word;
+    font-size: 40px;
   }
     img{
     grid-column: 1/13;
@@ -94,4 +101,24 @@
   .game-container{
     height: auto;
   }
+  .btn:hover {
+    background-color: #ff6600;
+  }
 }
+#text{
+  color:white;
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #33867e,
+    0 0 80px #33867e,
+    0 0 90px #33867e,
+    0 0 100px #33867e,
+    0 0 150px #33867e;
+}
+
