@@ -42,7 +42,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'Kinyitod a szemed. Csak lassan térsz magadhoz, úgy tűnik elaludtál. Nem is csoda, egész délután a könyvtárban voltál és a papucsállatkáról próbáltál meg minnél több információt megszerezni. Arra még emlékszel, hogy kinyitod a Nagy Állatismereti Kézikönyvet és unottan fellapozod az egysejtűekről szóló fejezetet. Fáradt voltál, csak egy kicsit letetted a fejed az asztalra..csak néhány percre..és most? Az ablakon kinézve megállapítod, hogy igencsak hosszúra sikeredett ez a kis pihenő. Már sötétedik és a papucsállatkák életéről sem tudtál meg semmit. Most mi legyen?',
+    text: 'Kinyitod a szemed. Csak lassan térsz magadhoz, úgy tűnik elaludtál. Nem is csoda, egész délután a könyvtárban voltál és a papucsállatkáról próbáltál meg minél több információt megszerezni. Arra még emlékszel, hogy kinyitod a Nagy Állatismereti Kézikönyvet és unottan fellapozod az egysejtűekről szóló fejezetet. Fáradt voltál, csak egy kicsit letetted a fejed az asztalra..csak néhány percre..és most? Az ablakon kinézve megállapítod, hogy igencsak hosszúra sikeredett ez a kis pihenő. Már sötétedik és a papucsállatkák életéről sem tudtál meg semmit. Most mi legyen?',
     options: [
       {
         text: 'Erőt veszel magadon, maradsz és befejezed a feladatot. Talán már nincs sok hátra.',
@@ -321,3 +321,4 @@ const textNodes = [
 ]
 
 startGame()
+
