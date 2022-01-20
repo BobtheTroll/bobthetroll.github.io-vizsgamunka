@@ -66,14 +66,14 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'Ahogy pakolod össze a dolgaid, akkor veszed észre, hogy a könyvtár teljesen üres. A lámpákat már lekapcsolták. Megállapítod, hogy jól döntöttél, amikor arra jutottál, inkább hazamész. Így elaludni, de tényleg? A kijárathoz érve azonban baljós előérzeted támad, nagy a csend és nagy a sötétség. Megpróbálod kinyitni az ajtót, de ...ZÁRVA van! Mindenki hazament, de téged itt felejtettek, hogy lehet, hogy senki sem szólt?! Előveszed a mobilod, hogy haza telefonálj, valaki jöjjön érted és juttasson ki innen - nagyon nem szeretnéd az egész hétvégét egy könyvtárban tölteni! Már nyúlsz is a zsebed felé, amikor eszedbe jut, hogy nincs nálad, Józsi bácsi vette el még a nagyszünet végén, amikor becsengettek, mert nem kapcsoltad ki. Kellemetlen. Hogyan tovább?',
+    text: 'Ahogy pakolod össze a dolgaid, akkor veszed észre, hogy a könyvtár teljesen üres. A lámpákat már lekapcsolták. Megállapítod, hogy jól döntöttél, amikor arra jutottál, inkább hazamész. Így elaludni, de tényleg? A kijárathoz érve azonban baljós előérzeted támad, nagy a csend és nagy a sötétség. Megpróbálod kinyitni az ajtót, de ...ZÁRVA van! Mindenki hazament, de téged itt felejtettek, hogy lehet, hogy senki sem szólt?! Eszedbe jut a mobilod, hogy haza telefonálj, valaki jöjjön érted és juttasson ki innen - nagyon nem szeretnéd az egész hétvégét egy könyvtárban tölteni! Már nyúlsz is a zsebed felé, amikor eszedbe jut, hogy nincs nálad, Jocó bácsi vette el még a nagyszünet végén, amikor becsengettek, mert nem kapcsoltad ki. Kellemetlen. Hogyan tovább?',
     options: [
       {
         text: 'Elindulsz másik kijáratot keresni. Talán van valahol egy véletlenül nyitva felejtett ajtó. Vagy egy pótkulcs. Vagy telefontöltő. Esetleg valami harapnivaló, már kezdesz éhes is lenni. Úgy tűnik, kevés volt a menzás szilvásgombóc. Nah, de koncentráljunk a KIJÁRATRA!',
         nextText: 4
       },
       {
-        text: 'Eszedbe jut, hogy Julcsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Julcsi néni asztalához.',
+        text: 'Eszedbe jut, hogy Fruzsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Julcsi néni asztalához.',
         nextText: 5
       },
     ]
@@ -90,7 +90,7 @@ const textNodes = [
   },
   {
     id: 5,
-    text: 'Julcsi néni asztala. Úgy tűnik, elfelejtette lekapcsolni a kis lámpát. Az asztal sarkán néhány könyvtári kölcsönző cédula mellett egy asztali telefon. Ezzzzazzz! Megmenekültél. A telefonhoz közelebb lépve azonban látod, hogy a használathoz szükséged lesz Julcsi néni könyvtárosi azonosítójára. Nah, ne..még ez is. Próbálod felidézni a legutóbbi alkalmat, amikor találkoztatok, hátha eszedbe jut a nyakában lógó belépőkártyán található azonosítószám. De hiába. Reményvesztetten leroskadsz a legközelebbi székre - egyre biztosabbnak látszik, hogy az egész hétvégét itt fogod tölteni. Utálom a papucsállatkákat - gondolod magadban, de ahogy végignézel az asztalon, meglátsz egy jegyzetfüzetet - "telefon azonosító kód vészhelyzet esetére" felirattal. Szeretem a papucsállatkákat és fellélegezve nyitod ki  a jegyzettömböt, ahol egy rejtélyes kódsort találsz. Ez meg vajon mi lehet?',
+    text: 'Fruzsi néni asztala. Úgy tűnik, elfelejtette lekapcsolni a kis lámpát. Az asztal sarkán néhány könyvtári kölcsönző cédula mellett egy asztali telefon. Ezzzzazzz! Megmenekültél. A telefonhoz közelebb lépve azonban látod, hogy a használathoz szükséged lesz Julcsi néni könyvtárosi azonosítójára. Nah, ne..még ez is. Próbálod felidézni a legutóbbi alkalmat, amikor találkoztatok, hátha eszedbe jut a nyakában lógó belépőkártyán található azonosítószám. De hiába. Reményvesztetten leroskadsz a legközelebbi székre - egyre biztosabbnak látszik, hogy az egész hétvégét itt fogod tölteni. Utálom a papucsállatkákat - gondolod magadban, de ahogy végignézel az asztalon, meglátsz egy jegyzetfüzetet - "telefon azonosító kód vészhelyzet esetére" felirattal. Szeretem a papucsállatkákat és fellélegezve nyitod ki  a jegyzettömböt, ahol egy rejtélyes kódsort találsz. Ez meg vajon mi lehet?',
     options: [
       {
         text: 'Nah, most még ez is..rejtélyes kódsor..úgy döntesz, inkább sajnálod még magad egy kicsit és tovább utálod a papucsállatkákat',
@@ -240,7 +240,7 @@ const textNodes = [
   },
   {
     id: 16,
-    text: 'Ismét a faliújságra pillantasz: "Először laborokban, kísérleti állatnak tartották, mert hihetetlen a gyógyulási képessége, elvesztett végtagjait képes újranöveszteni.',
+    text: 'Ismét a faliújságra pillantasz: "Először laborokban, kísérleti állatként tartották, mert hihetetlen a gyógyulási képessége, elvesztett végtagjait képes újranöveszteni.',
     options: [
       {
         text: 'Aha, akkor a válasz Igaz!',
@@ -285,7 +285,7 @@ const textNodes = [
     text: 'Győzelem!!!! A telefon búg, van szabad vonal..el sem hiszed, hogy végül ilyen egyszerű volt, hiába no, ügyes vagy! Tárcsázod is az otthoni számotokat, küldjenek érted valakit mielőbb, mert már igencsak szabadulnál a könyvtár fogságából. Miközben várod, hogy valaki felvegye a telefont, magadban elmosolyodsz, mert elképzeled, ahogy egy vizikutya az eleséget egyszerűen a szájába szippantva kajál...ez milyen már, de tényleg?!',
     options: [
       {
-        text: 'Küldetés vége, gratuálunk sikeresen befejezted a játékot! ÚJRAJÁTSZÁS',
+        text: 'Küldetés vége, gratulálunk sikeresen befejezted a játékot! ÚJRAJÁTSZÁS',
         nextText: -1
       }
     ]
