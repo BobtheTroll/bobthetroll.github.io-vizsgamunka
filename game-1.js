@@ -46,7 +46,6 @@ const textNodes = [
     options: [
       {
         text: 'Erőt veszel magadon, maradsz és befejezed a feladatot. Talán már nincs sok hátra.',
-        /*setState: { blueGoo: true },*/
         nextText: 2
       },
       {
@@ -61,20 +60,8 @@ const textNodes = [
     options: [
       {
         text: 'Összepakolsz és elindulsz a kijárat felé.',
-        /*requiredState: (currentState) => currentState.blueGoo,*/
-        /*setState: { blueGoo: false, sword: true },*/
         nextText: 3
       },
-      /*{
-        text: 'Trade the goo for a shield',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, shield: true },
-        nextText: 3
-      },
-      {
-        text: 'Ignore the merchant',
-        nextText: 3
-      }*/
     ]
   },
   {
@@ -89,10 +76,6 @@ const textNodes = [
         text: 'Eszedbe jut, hogy Julcsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Julcsi néni asztalához.',
         nextText: 5
       },
-      /*{
-        text: 'Find some hay in a stable to sleep in',
-        nextText: 6
-      }*/
     ]
   },
   {
@@ -139,19 +122,8 @@ const textNodes = [
       },
       {
         text: 'Hamis',
-        /*requiredState: (currentState) => currentState.sword,*/
         nextText: 9
       },
-      /*{
-        text: 'Hide behind your shield',
-        requiredState: (currentState) => currentState.shield,
-        nextText: 10
-      },
-      {
-        text: 'Throw the blue goo at it',
-        requiredState: (currentState) => currentState.blueGoo,
-        nextText: 11
-      }*/
     ]
   },
   {
