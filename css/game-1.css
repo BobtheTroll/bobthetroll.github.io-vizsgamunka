@@ -8,6 +8,7 @@
   body{
     background-color: #180f0f;
     margin: 0 auto;
+    height: 100vh;
 }
   .main-container {
     display: grid;
@@ -21,8 +22,8 @@
     align-items: center;
     text-align: center;
     grid-gap: 10px;
-    /*width: 100vw;
-    height: 100vh;*/
+    width: 100vw;
+    height: 100vh;
   }
   img{
     grid-column: 1/2;
