@@ -19,6 +19,7 @@ body{background-color: #180f0f;
         grid-template-rows: minmax(100px, auto, auto);
         justify-items: center;
         align-items: center; 
+        height: 70vh;
  }
 .logo{
     max-height: inherit;
@@ -360,10 +361,15 @@ section.griditem-7{
 /*SignIn Form*/
 
 .form-container {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(8,60px,auto,auto,auto,auto,auto,auto,100px);
+  grid-auto-rows:auto;
   position: relative;
   z-index: 1;
   background: #180f0f;
   max-width: 300px;
+  height: 100vh;
   margin: 0 auto 100px;
   padding: 10px;
   border-top-left-radius: 3px;
@@ -372,6 +378,19 @@ section.griditem-7{
   border-bottom-right-radius: 3px;
   text-align: center;
 
+}
+.signinlogo{
+  grid-column: 1/9;
+  grid-row: 1/2;
+
+}
+.register-form{
+  grid-column: 1/9;
+  grid-row: 2/9;
+}
+.login-form{
+  grid-column: 1/9;
+  grid-row: 2/9;
 }
 .form-container .signinlogo img {
   display: block;
