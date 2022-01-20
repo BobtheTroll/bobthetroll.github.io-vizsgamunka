@@ -48,20 +48,18 @@
     color: #33867e;
     margin-bottom: 5px;
   }
-
 a{
   text-decoration: none;
 }
 i{
   color: #33867e;
 }
-
   .game-container{
    grid-column: 1/13;
    grid-row: 3/11;
    align-self: center;
    justify-self: center;
-  
+
   }
   .game-container {
     display: grid;
@@ -74,16 +72,14 @@ i{
     font-family: 'Courier Prime', monospace;
     text-align: justify;
   }
-  
   .btn-grid {
     display: grid;
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     margin-top: 20px;
   }
-  
    .btn {
-    background-color: #33867e;
+    background-color: #180f0f;
     border: 1px solid #33867e;
     border-radius: 5px;
     padding: 5px 10px;
@@ -94,12 +90,12 @@ i{
     transition: all 150ms ease-in-out;
     font-size: 16px;
     }
-    @media (min-width:681px) {
+    @media (min-width:969px) {
     .btn:hover {
       box-shadow: 0 0 10px 0 #33867e inset, 0 0 10px 4px #33867e;
     }
     }
-  @media (max-width:680px) {
+  @media (max-width:968px) {
     header{
     grid-column: 1/13;
     grid-row:2/3;
@@ -116,13 +112,11 @@ i{
   .game-container{
     height: auto;
     width: auto;
-  }
-  
+  } 
 }
 #text{
   color:white;
 }
-
 .neon {
   color: #fff;
   text-shadow:
