@@ -76,7 +76,7 @@ i{
     display: grid;
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 20px; 
   }
    .btn {
     background-color: #180f0f;
@@ -86,7 +86,7 @@ i{
     color: white;
     outline: none;
     font-family: 'Courier Prime', monospace;
-    box-shadow: 0 0 40px 40px #33867e inset, 0 0 0 0 #00ff00;
+    box-shadow: 0 0 50px 50px #33867e inset;
     transition: all 150ms ease-in-out;
     font-size: 16px;
     }

@@ -80,7 +80,7 @@ section.griditem-4{
     color: #180f0f;
     background-color: #f94a4c;
     align-self: stretch;
-    padding: 10px;    
+    padding: 10px; 
 }
 section.griditem-5{
   grid-column:3/5;
