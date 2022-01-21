@@ -86,7 +86,7 @@ i{
     color: white;
     outline: none;
     font-family: 'Courier Prime', monospace;
-    box-shadow: 0 0 50px 50px #33867e inset;
+    box-shadow: 0 0 100px 100px #33867e inset;
     transition: all 150ms ease-in-out;
     font-size: 16px;
     }
