@@ -70,7 +70,7 @@ i{
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
     font-family: 'Courier Prime', monospace;
-    text-align: center;
+    text-align: left;
   }
   .btn-grid {
     display: grid;
@@ -116,6 +116,9 @@ i{
 }
 #text{
   color:white;
+  border-left: 5px solid #33867e;
+  padding-left: 10px;
+  
 }
 .neon {
   color: #fff;

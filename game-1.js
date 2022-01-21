@@ -66,21 +66,21 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'Ahogy pakolod össze a dolgaid, akkor veszed észre, hogy a könyvtár teljesen üres. A lámpákat már lekapcsolták. Megállapítod, hogy jól döntöttél, amikor arra jutottál, inkább hazamész. Így elaludni, de tényleg? A kijárathoz érve azonban baljós előérzeted támad, nagy a csend és nagy a sötétség. Megpróbálod kinyitni az ajtót, de ...ZÁRVA van! Mindenki hazament, de téged itt felejtettek, hogy lehet, hogy senki sem szólt?! Eszedbe jut a mobilod, hogy haza telefonálj, valaki jöjjön érted és juttasson ki innen - nagyon nem szeretnéd az egész hétvégét egy könyvtárban tölteni! Már nyúlsz is a zsebed felé, amikor eszedbe jut, hogy nincs nálad, Jocó bácsi vette el még a nagyszünet végén, amikor becsengettek, mert nem kapcsoltad ki. Kellemetlen. Hogyan tovább?',
+    text: 'Ahogy pakolod össze a dolgaid, akkor veszed észre, hogy a könyvtár teljesen üres. A lámpákat már lekapcsolták. Megállapítod, hogy jól döntöttél, amikor arra jutottál, inkább hazamész. Így elaludni, de tényleg? A kijárathoz érve azonban baljós előérzeted támad, nagy a csend és nagy a sötétség. Megpróbálod kinyitni az ajtót, de ..ZÁRVA van! Mindenki hazament, de téged itt felejtettek. Hogy lehet, hogy senki sem szólt?! Eszedbe jut a mobilod, hogy haza telefonálj, valaki jöjjön érted és juttasson ki innen - nagyon nem szeretnéd az egész hétvégét egy könyvtárban tölteni! Már nyúlsz is a zsebed felé, amikor eszedbe jut, hogy nincs nálad, Jocó bácsi vette el még a nagyszünet végén, amikor becsengettek, mert nem kapcsoltad ki. Kellemetlen. Hogyan tovább?',
     options: [
       {
         text: 'Elindulsz másik kijáratot keresni. Talán van valahol egy véletlenül nyitva felejtett ajtó. Vagy egy pótkulcs. Vagy telefontöltő. Esetleg valami harapnivaló, már kezdesz éhes is lenni. Úgy tűnik, kevés volt a menzás szilvásgombóc. Nah, de koncentráljunk a KIJÁRATRA!',
         nextText: 4
       },
       {
-        text: 'Eszedbe jut, hogy Fruzsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Julcsi néni asztalához.',
+        text: 'Eszedbe jut, hogy Fruzsi néni, a könyvtáros asztalán mintha láttál volna egy asztali telefont. Őskori technika - gondolod magadban - de lehet ez húz majd most ki a pácból. Elindulsz Fruzsi néni asztalához.',
         nextText: 5
       },
     ]
   },
   {
     id: 4,
-    text: 'Azért lássuk be, nem egyszerű bármit is megtalálni ebben a sötétben. Leginkább másik kijáratot. Egy elemlámpa jól jönne. De abból pont annyi van nálad, mint működő mobiltelefonból. A könyvespolcok között botorkálva halvány fénysugarat veszel észre. Lehet másnak is sikerült a könyvek felett elaludnia? Halló...van itt valaki? - kiabálod a sötétségbe, de nem érkezik válasz.',
+    text: 'Azért lássuk be, nem egyszerű bármit is megtalálni ebben a sötétben. Leginkább másik kijáratot. Egy elemlámpa jól jönne. De abból pont annyi van nálad, mint működő mobiltelefonból. A könyvespolcok között botorkálva halvány fénysugarat veszel észre. Lehet másnak is sikerült a könyvek felett elaludnia? Halló, van itt valaki? - kiabálod a sötétségbe, de nem érkezik válasz.',
     options: [
       {
         text: 'Bizonytalan léptekkel ugyan, de elindulsz a fénysugár irányába.',
@@ -90,21 +90,21 @@ const textNodes = [
   },
   {
     id: 5,
-    text: 'Fruzsi néni asztala. Úgy tűnik, elfelejtette lekapcsolni a kis lámpát. Az asztal sarkán néhány könyvtári kölcsönző cédula mellett egy asztali telefon. Ezzzzazzz! Megmenekültél. A telefonhoz közelebb lépve azonban látod, hogy a használathoz szükséged lesz Julcsi néni könyvtárosi azonosítójára. Nah, ne..még ez is. Próbálod felidézni a legutóbbi alkalmat, amikor találkoztatok, hátha eszedbe jut a nyakában lógó belépőkártyán található azonosítószám. De hiába. Reményvesztetten leroskadsz a legközelebbi székre - egyre biztosabbnak látszik, hogy az egész hétvégét itt fogod tölteni. Utálom a papucsállatkákat - gondolod magadban, de ahogy végignézel az asztalon, meglátsz egy jegyzetfüzetet - "telefon azonosító kód vészhelyzet esetére" felirattal. Szeretem a papucsállatkákat és fellélegezve nyitod ki  a jegyzettömböt, ahol egy rejtélyes kódsort találsz. Ez meg vajon mi lehet?',
+    text: 'Fruzsi néni asztala. Úgy tűnik, elfelejtette lekapcsolni a kis lámpát. Az asztal sarkán néhány könyvtári kölcsönző cédula mellett egy asztali telefon. Ezzzzazzz! Megmenekültél. A telefonhoz közelebb lépve azonban látod, hogy a használathoz szükséged lesz Fruzsi néni könyvtárosi azonosítójára. Nah, ne! Még ez is. Próbálod felidézni a legutóbbi alkalmat, amikor találkoztatok, hátha eszedbe jut a nyakában lógó belépőkártyán található azonosítószám. De hiába. Reményvesztetten leroskadsz a legközelebbi székre - egyre biztosabbnak látszik, hogy az egész hétvégét itt fogod tölteni. Utálom a papucsállatkákat - gondolod magadban, de ahogy végignézel az asztalon, meglátsz egy jegyzetfüzetet: "telefon azonosító kód vészhelyzet esetére" felirattal. Szeretem a papucsállatkákat és fellélegezve nyitod ki  a jegyzettömböt, ahol egy rejtélyes kódsort találsz. Ez meg vajon mi lehet?',
     options: [
       {
-        text: 'Nah, most még ez is..rejtélyes kódsor..úgy döntesz, inkább sajnálod még magad egy kicsit és tovább utálod a papucsállatkákat',
+        text: 'Nah, most még ez is! .rejtélyes kódsor.. úgy döntesz, inkább sajnálod még magad egy kicsit és tovább utálod a papucsállatkákat',
         nextText: 6
       },
       {
-        text: 'Rejtélyes kódsor, mi? Már érzed is a szabadság édes ízét - milyen kódsor az, amit te ne tudnál kitalálni?! Előveszel egy tollat és olvasni kezded.',
+        text: 'Rejtélyes kódsor, mi? Már érzed is a szabadság édes ízét! Milyen kódsor az, amit te ne tudnál kitalálni?! Előveszel egy tollat és olvasni kezded.',
         nextText: 7
       }
     ]
   },
   {
     id: 6,
-    text: 'Úgy tűnik, elég volt néhány percet eltölteni az önsajnálat mocsarában, mert egyre erősebben érzed, hogy közel a szabadulás. Mindig is szerettél rejtvényeket megoldani és valószínű, hogy Julcsi néni kódja sem feltörhetetlen. Arról nem is beszélve, hogy még két napig a mai uzsonnád maradékából élni, nem egy vonzó lehetőség.',
+    text: 'Úgy tűnik, elég volt néhány percet eltölteni az önsajnálat mocsarában, mert egyre erősebben érzed, hogy közel a szabadulás. Mindig is szerettél rejtvényeket megoldani és valószínű, hogy Fruzsi néni kódja sem feltörhetetlen. Arról nem is beszélve, hogy még két napig a mai uzsonnád maradékából élni, nem egy vonzó lehetőség.',
     options: [
       {
         text: 'Erőt veszel magadon és tollat ragadsz. Olvasni kezded a jegyzetet.',
@@ -114,7 +114,7 @@ const textNodes = [
   },
   {
     id: 7,
-    text: '"Ha IGAZ, akkor 1, ha HAMIS, akkor 0" - nah jó, de mi? - gondolod magadban…kell itt még lennie valaminek..továbblapozol és egy Vizikutya feladványra bukkansz. Az első kérdés: A vízikutya trópusi vidékről származó állat, ezért igen kedveli a meleg környezetet.',
+    text: '"Ha IGAZ, akkor 1, ha HAMIS, akkor 0" - nah jó, de mi? - gondolod magadban…kell itt még lennie valaminek.. továbblapozol és egy Vizikutya feladványra bukkansz. Az első kérdés: A vízikutya trópusi vidékről származó állat, ezért igen kedveli a meleg környezetet.',
     options: [
       {
         text: 'Igaz',
@@ -156,7 +156,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: 'Gondold ezt át újra, szólal meg egy hang ismételten a fejedben. A faliújságon lévő ismertető szerint: "életkora – szabadban kb 10 évig él, fogságban az élettartama ennek a dupláját is elérheti"',
+    text: 'Gondold ezt át újra, szólal meg egy hang ismételten a fejedben. A faliújságon lévő ismertető szerint: "életkora: szabadban kb. 10 évig él, fogságban az élettartama ennek a dupláját is elérheti"',
     options: [
       {
         text: 'Igaz',
@@ -187,11 +187,11 @@ const textNodes = [
     text: 'Háát, ebben azért nem vagy teljesen biztos, lopva ismét a faliújságra nézel: "A zsákmányt vákumerővel szippantja a gyomrába."',
     options: [
       {
-        text: 'Aha, akkor a válasz, Hamis',
+        text: 'Aha, akkor a válasz, hamis',
         nextText: 13
       },
       {
-        text: 'Aha, akkor a válasz, Igaz',
+        text: 'Aha, akkor a válasz, igaz',
         nextText: 12
       }
     ]
@@ -254,7 +254,7 @@ const textNodes = [
   },
   {
     id: 17,
-    text: 'Itt a vége, gyorsan a lejegyzetelt válaszaidra tekintesz és már írod is a kódot. Igaz = 1, hamis = 0. Az asztalon található telefonon az alábbi számgombokat nyomod le:',
+    text: 'Itt a vége, gyorsan a lejegyzetelt válaszaidra tekintesz és már írod is a kódot. Igaz = 1, Hamis = 0. Az asztalon található telefonon az alábbi számgombokat nyomod le:',
     options: [
       {
         text: '01011',
@@ -272,7 +272,7 @@ const textNodes = [
   },
   {
     id: 18,
-    text: 'Hűha, ez nem lesz jó..hiába próbálkozol újra meg újra, a telefon néma marad. De mit nézhettem be? - kérdezed magadtól. Tudod, hogy ilyen közel a szabadsághoz már nem fogod feladni!',
+    text: 'Hűha, ez nem lesz jó.. hiába próbálkozol újra meg újra, a telefon néma marad. De mit nézhettem be? - kérdezed magadtól. Tudod, hogy ilyen közel a szabadsághoz már nem fogod feladni!',
     options: [
       {
         text: 'Újra olvasni kezded a jegyzetet.',
@@ -282,7 +282,7 @@ const textNodes = [
   },
   {
     id: 19,
-    text: 'Győzelem!!!! A telefon búg, van szabad vonal..el sem hiszed, hogy végül ilyen egyszerű volt, hiába no, ügyes vagy! Tárcsázod is az otthoni számotokat, küldjenek érted valakit mielőbb, mert már igencsak szabadulnál a könyvtár fogságából. Miközben várod, hogy valaki felvegye a telefont, magadban elmosolyodsz, mert elképzeled, ahogy egy vizikutya az eleséget egyszerűen a szájába szippantva kajál...ez milyen már, de tényleg?!',
+    text: 'Győzelem!!!! A telefon búg, van szabad vonal.. el sem hiszed, hogy végül ilyen egyszerű volt, hiába no, ügyes vagy! Tárcsázod is az otthoni számotokat, küldjenek érted valakit mielőbb, mert már igencsak szabadulnál a könyvtár fogságából. Miközben várod, hogy valaki felvegye a telefont, magadban elmosolyodsz, mert elképzeled, ahogy egy vizikutya az eleséget egyszerűen a szájába szippantva kajál.. ez milyen már, de tényleg?!',
     options: [
       {
         text: 'Küldetés vége, gratulálunk sikeresen befejezted a játékot! ÚJRAJÁTSZÁS',
