@@ -64,7 +64,7 @@ i{
   .game-container {
     display: grid;
     width: 600px;
-    max-width: 80%;
+    max-width: 95%;
     height: auto;
     padding: 10px;
     border-radius: 5px;
