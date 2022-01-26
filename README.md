@@ -12,6 +12,8 @@ Források:
 ezt alakítottam át
 2. JS - https://www.youtube.com/watch?v=R1S_NhKkvGA
 ebből a videóból indultam ki, ahol kellett, átalakítottam, hozzáteszem, bár értem a kód működését, nem tudtam volna magamtól megírni :)
+3. Form - https://codepen.io/andytran/pen/GJOBZj/
+ezt alakítottam át
 
 MOBILNÉZET - lécci, próbáld majd ki mobilon is, az a tapasztalom, hogy monitoron az inspect-ben néha nem jól néz ki a megjelenés, annak ellenére, hogy mobilon teljesen jó
 
